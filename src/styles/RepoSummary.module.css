@@ -1,0 +1,56 @@
+.repoSummaryContainer {
+    background-color: #fffaf2;
+    border: 1px solid #f5d69b;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .summaryText {
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  .techStackTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .techStackTable th,
+  .techStackTable td {
+    border: 1px solid #ddd;
+    padding: 12px 16px;
+    text-align: left;
+  }
+  
+  .techStackTable th {
+    background-color: #ffdb99;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .techStackTable tr:nth-child(even) {
+    background-color: #fcf9f3;
+  }
+  
+  .techStackTable tr:hover {
+    background-color: #f1f5f9;
+    cursor: pointer;
+  }
+  
+  .rawSummary {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
