@@ -6,9 +6,9 @@ import ProgressList from "@/components/ui/ProgressList";
 import { getRepoTree } from "@/utils/github";
 import RepoTree from "@/components/ui/DevRepoTree";
 import { supabase } from "@/utils/supabaseClient";
-import { FiEdit3, FiMessageCircle } from "react-icons/fi"; // Notes & Chatbot buttons
+import { FiEdit3, FiMessageCircle } from "react-icons/fi"; 
 import NotesModal from "@/components/ui/NotesModel";
-import ChatModal from "@/components/ui/Chatbot"; // Chatbot modal
+import ChatModal from "@/components/ui/Chatbot"; 
 import axios from "axios";
 
 export default function Dashboard() {

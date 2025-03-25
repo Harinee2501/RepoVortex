@@ -6,7 +6,7 @@ export default function RepoInput({ onSubmit }: { onSubmit: (url: string) => voi
   const handleAnalyze = () => {
     if (repoUrl.trim() !== "") {
       onSubmit(repoUrl.trim());
-      setRepoUrl(""); // clear after submission
+      setRepoUrl("");
     }
   };
 

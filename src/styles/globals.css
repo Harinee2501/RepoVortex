@@ -58,34 +58,9 @@
     --chart-5: 340 75% 55%;
   }
 
-  /* Styling for Mermaid Diagrams */
-  .mermaid-diagram-container {
-    background-color: var(--secondary); /* Light background for the diagram */
-    padding: 2rem;
-    border-radius: var(--radius); /* Rounded corners for aesthetics */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .mermaid-diagram-container h3 {
-    text-align: center;
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    color: var(--primary-foreground); /* Ensures text is readable */
-  }
-
-  .mermaid-diagram-container .mermaid {
-    max-width: 100%;
-    overflow-x: auto; /* Prevents horizontal scrolling */
-  }
-}
-
-/* Default Body Styles */
 @layer base {
   * {
-    border-color: var(--border); /* Apply border color globally */
+    border-color: var(--border); 
   }
 
   body {

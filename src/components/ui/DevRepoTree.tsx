@@ -30,7 +30,6 @@ export default function RepoTree({ treeData, owner, repo, branch = "main" }: Rep
         `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${filePath}`
       ).then((res) => res.text());
 
-      // Modify this part to call devrepo.ts' explanation API instead of the previous one
       const response = await fetch("/api/devrepo", {
         method: "POST",
         headers: { "Content-Type": "application/json" },

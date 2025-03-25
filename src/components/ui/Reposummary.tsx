@@ -7,7 +7,6 @@ interface RepoSummaryProps {
 }
 
 const RepoSummary: React.FC<RepoSummaryProps> = ({ summary }) => {
-  // Function to render tables in the summary
   const renderTable = (text: string) => {
     const tableRegex = /(\|[^\n]+\|\n)(\|[-\s|]+\|\n)((?:\|[^\n]+\|\n?)+)/m;
     const match = text.match(tableRegex);
@@ -53,14 +52,12 @@ const RepoSummary: React.FC<RepoSummaryProps> = ({ summary }) => {
     );
   };
 
-  // Function to filter out the "Technology Stack" section
   const removeTechStackSection = (text: string) => {
-    // Regular expression to remove the "Technology Stack" table or block
+
     const techStackRegex = /(?:Technology Stack|Stack:)([\s\S]*?)(?=\n|$)/m;
     return text.replace(techStackRegex, "");
   };
 
-  // Remove the "Technology Stack" part from the summary
   const filteredSummary = removeTechStackSection(summary);
 
   const tableContent = renderTable(filteredSummary);

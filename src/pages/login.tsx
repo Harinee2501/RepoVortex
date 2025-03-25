@@ -9,10 +9,8 @@ export default function Login() {
   const router = useRouter();
 
   useEffect(() => {
-    // Check if the user has selected a role (Beginner or Developer)
     const userRole = localStorage.getItem("user_role");
     if (!userRole) {
-      // If no role is selected, redirect to the homepage to choose a role
       router.push("/");
     }
   }, []);
@@ -34,7 +32,6 @@ export default function Login() {
         return;
       }
 
-      // Store user_id and role in localStorage after login
       localStorage.setItem("loggedIn", "true");
       localStorage.setItem("user_id", data.user.id);
 

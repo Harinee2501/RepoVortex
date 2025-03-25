@@ -28,7 +28,6 @@ export const getRepoFiles = async (owner: string, repo: string, branch: string =
   }
 };
 
-// Function to get the content of a file
 export const getFileContent = async (owner: string, repo: string, branch: string, filePath: string) => {
   const response = await axios.get(
     `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${filePath}`

@@ -71,7 +71,7 @@ export default function Chatbot({ onClose }: ChatbotProps) {
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyPress}
             className="flex-1 border p-2 rounded"
-            placeholder="Ask me anything about the repo or coding..."
+            placeholder="Ask me anything..."
           />
           <button
             onClick={handleSend}
