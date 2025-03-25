@@ -53,11 +53,22 @@ Have doubts? Ask RepoVortex’s chatbot for explanations, step-by-step guidance,
 1. **Clone the repo:**
 ```sh
 git clone https://github.com/your-username/repovortex.git
-```sh
+```
 
 2. **Install dependencies:**
 ```sh
 npm install
+```
+
+3. **Set up environment variables:**
+
+Create a .env.local file
+
+Add your Supabase keys and Groq API key.
+
+4. **Start the dev server:**
 ```sh
+npm run dev
+```
 
 
