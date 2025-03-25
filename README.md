@@ -1,12 +1,12 @@
-# 🚀 RepoVortex 🦝 — Your AI-Powered Open-Source Repo Companion
+# RepoVortex 🦝 — Your AI-Powered Open-Source Repo Companion
 
 **RepoVortex** is an intelligent platform designed to help beginners and contributors easily understand complex repositories, visualize structures, track their contribution progress, and get AI-guided assistance for contributing to open source.
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
-### ✅ For Beginners
+### For Beginners
 **Repository Analysis:**  
 Enter a GitHub repository URL and get a breakdown of the entire codebase — explained in simple language, file by file, line by line.  
 
@@ -18,7 +18,7 @@ Downloadable, step-by-step documentation on how to contribute to open source —
 
 ---
 
-### ✅ For All Users
+### For All Users
 **Repo Structure Visualization:**  
 View the entire file-tree structure of any GitHub repo in a clean, interactive layout.  
 
@@ -36,7 +36,7 @@ Search across your history to quickly find previously analyzed repos.
 
 ---
 
-### ✅ For Developers
+### For Developers
 **Feature Index Generator:**  
 Get a developer-focused index that highlights key features and where they’re implemented inside the codebase.  
 
@@ -48,7 +48,7 @@ Have doubts? Ask RepoVortex’s chatbot for explanations, step-by-step guidance,
 
 ---
 
-## 📥 Getting Started (Local Setup)
+## Getting Started (Local Setup)
 
 1. **Clone the repo:**
 ```bash
