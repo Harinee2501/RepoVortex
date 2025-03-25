@@ -51,11 +51,13 @@ Have doubts? Ask RepoVortex’s chatbot for explanations, step-by-step guidance,
 ## Getting Started (Local Setup)
 
 1. **Clone the repo:**
-```bash
+```sh
 git clone https://github.com/your-username/repovortex.git
+```sh
 
 2. **Install dependencies:**
-```bash
+```sh
 npm install
+```sh
 
 
