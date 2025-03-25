@@ -76,21 +76,15 @@ npm run dev
 
 ##Contribution Guidelines
 **Check the “Guidelines for Open Source Contribution” section inside the app for a downloadable PDF that covers:**
-
-Setting up Git & GitHub
-
-Forking repositories
-
-Making your first pull request
-
-Best practices for contributing
-
-And more!- Setting up Git & GitHub
+- Setting up Git & GitHub
 - Forking repositories
 - Making your first pull request
 - Best practices for contributing
 - And more!
 
-
+##Upcoming Features
+- Automated architectural diagram generation
+- Flowchart visualization of repo workflows
+- AI-based recommendation of beginner-friendly issues
 
 
