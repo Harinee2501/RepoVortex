@@ -9,18 +9,12 @@ export default function Login() {
   const router = useRouter();
 
   useEffect(() => {
-    // Check if the user is already logged in (i.e., if there's an active session)
-    const checkSession = async () => {
-      const { data: { session }, error } = await supabase.auth.getSession();
-      if (session) {
-        // If the session exists, log out the user to force them to log in again
-        await supabase.auth.signOut(); // Log out the existing user
-        localStorage.removeItem("loggedIn"); // Remove the session from local storage
-      }
-    };
-
-    // Call checkSession to clear any active session on component mount
-    checkSession();
+    // Check if the user has selected a role (Beginner or Developer)
+    const userRole = localStorage.getItem("user_role");
+    if (!userRole) {
+      // If no role is selected, redirect to the homepage to choose a role
+      router.push("/");
+    }
   }, []);
 
   const handleLogin = async () => {
@@ -29,28 +23,31 @@ export default function Login() {
         email,
         password,
       });
-  
+
       if (error) {
         setError(error.message);
         return;
       }
-  
+
       if (data?.user?.email_confirmed_at === null) {
         setError("Please confirm your email address before logging in.");
         return;
       }
-  
-      // ✅ Store user_id in localStorage after login
+
+      // Store user_id and role in localStorage after login
       localStorage.setItem("loggedIn", "true");
-      localStorage.setItem("user_id", data.user.id);  // <-- add this line
-  
-      alert("Login successful!");
-      router.replace("/dashboard");
+      localStorage.setItem("user_id", data.user.id);
+
+      const userRole = localStorage.getItem("user_role");
+      if (userRole === "Beginner") {
+        router.replace("/dashboard");
+      } else {
+        router.replace("/developer-dashboard");
+      }
     } catch (error) {
       setError("An error occurred during login.");
     }
   };
-  
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">

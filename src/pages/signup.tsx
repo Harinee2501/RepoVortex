@@ -20,10 +20,7 @@ export default function Signup() {
         return;
       }
 
-      // Display success message and guide the user to check email
       alert("Signup successful! Please check your inbox to confirm your email.");
-      
-      // Redirect the user to the login page
       router.replace("/login");
     } catch (error) {
       setError("An error occurred during signup.");

@@ -1,7 +1,16 @@
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
 
 export default function HomePage() {
   const router = useRouter();
+
+  const handleSelection = (role: string) => {
+    localStorage.setItem("user_role", role);
+    if (role === "Beginner") {
+      router.push("/beginner");
+    } else {
+      router.push("/developer");
+    }
+  };
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-purple-200 to-white dark:from-gray-800 dark:to-gray-900">
@@ -13,13 +22,13 @@ export default function HomePage() {
       </p>
       <div className="flex gap-10">
         <button
-          onClick={() => router.push("/beginner")}
+          onClick={() => handleSelection("Beginner")}
           className="px-8 py-4 bg-indigo-600 text-white text-xl rounded-lg shadow hover:bg-indigo-700 transition"
         >
           👉 Continue as Beginner
         </button>
         <button
-          onClick={() => router.push("/developer")}
+          onClick={() => handleSelection("Developer")}
           className="px-8 py-4 bg-green-600 text-white text-xl rounded-lg shadow hover:bg-green-700 transition"
         >
           👉 Continue as Developer
