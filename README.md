@@ -73,6 +73,13 @@ npm run dev
 ---
 
 ## Tech Stack
+- TypeScript
+- React.js
+- Next.js
+- Supabase
+- LLMs
+- Tailwind CSS
+
 ---
 ##  Contribution Guidelines
 **Check the “Guidelines for Open Source Contribution” section inside the app for a downloadable PDF that covers:**
