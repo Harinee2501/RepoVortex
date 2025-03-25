@@ -53,3 +53,9 @@ Have doubts? Ask RepoVortex’s chatbot for explanations, step-by-step guidance,
 1. **Clone the repo:**
 ```bash
 git clone https://github.com/your-username/repovortex.git
+
+2. **Install dependencies:**
+```bash
+npm install
+
+
