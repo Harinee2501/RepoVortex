@@ -93,5 +93,6 @@ npm run dev
 - Automated architectural diagram generation
 - Flowchart visualization of repo workflows
 - AI-based recommendation of beginner-friendly issues
+---
 
 
