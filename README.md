@@ -1,6 +1,6 @@
 # RepoVortex 🦝 — Your AI-Powered Open-Source Repo Companion
 
-**RepoVortex** is an intelligent platform designed to help beginners and contributors easily understand complex repositories, visualize structures, track their contribution progress, and get AI-guided assistance for contributing to open source.
+**RepoVortex** is an intelligent platform designed to help beginners and contributors easily understand complex repositories, visualize structures, track their contribution progress, and get AI-guided assistance for contributing to open source using RAG.
 
 ---
 
